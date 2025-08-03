@@ -82,11 +82,21 @@ body {
   font-size: 34px;
   font-style: italic;
   font-weight: 900;
-  margin-top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
   padding: 18px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    padding: 18;
+  }
 }
 
 /* Left Panel */
@@ -131,4 +141,57 @@ body {
 
 .social-icons a:hover {
   color: #d1d5db;
+}
+
+/* Right Form Section */
+.form-section {
+  flex: 1;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .form-section {
+    margin-left: 32px;
+    margin-top: 0;
+  }
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+
+@media (min-width: 768px) {
+  .input-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 43px 32px;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  resize: none;
 }

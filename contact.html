@@ -14,9 +14,10 @@
     <div id="navbar"></div>
 
     <!-- Main content -->
-    <main class="main-container">
-      <h1 class="form-title">Contact Us</h1>
 
+    <h1 class="form-title">Contact Us</h1>
+
+    <main class="main-container">
       <!-- Left red panel -->
       <aside class="left-panel">
         <p class="logo">News</p>
@@ -42,7 +43,33 @@
         </div>
       </aside>
 
-
+      <!-- Right form -->
+      <section class="form-section">
+        <form class="contact-form">
+          <div class="input-grid">
+            <div class="input-group">
+              <label for="firstName1">First Name</label>
+              <input type="text" id="firstName1" />
+            </div>
+            <div class="input-group">
+              <label for="firstName2">First Name</label>
+              <input type="text" id="firstName2" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="18"></textarea>
+          </div>
+        </form>
+      </section>
     </main>
 
     <script src="/assets/js/script.js"></script>
