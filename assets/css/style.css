@@ -195,3 +195,24 @@ body {
   border: 1px solid #d1d5db;
   resize: none;
 }
+
+.bottom-text {
+  padding: 18px;
+}
+
+.submit-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #dc2626;
+}
