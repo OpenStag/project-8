@@ -1,0 +1,79 @@
+/* assets/css/style.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links i {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-red {
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: #e5e7eb;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
