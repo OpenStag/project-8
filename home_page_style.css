@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-right: 50px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    font-family: inherit;
+    padding-right: 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.login {
+    margin-left: auto;
+    display: flex;
+}
+
+.login li {
+    margin-right: 20px;
+}
+
+.login button {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.login .button1 {
+    background-color: red;
+    color: white;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background-color: black;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .login {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .login li {
+        margin: 5px 0;
+    }
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="home_page_style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav-links">
+            <ul class="nav-menu">
+                <li class="logo"> <a href="#">News <br> &nbsp; Today</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="login">
+                    <li><a href="#"><button class="button1">Login</button></a></li>
+                    <li><a href="#"><button class="register_button">Register</button></a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+   
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
