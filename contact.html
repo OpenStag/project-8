@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Main content -->
+
+    <h1 class="form-title">Contact Us</h1>
+
+    <main class="main-container">
+      <aside class="left-panel">
+        <!-- Top Left Boxes -->
+        <div class="top-boxes">
+          <div class="box"></div>
+          <div class="wide-box"></div>
+        </div>
+
+        <!-- Top Right Boxes -->
+        <div class="top-right-boxes">
+          <div class="wide-box"></div>
+          <div class="box"></div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="panel-content">
+          <img src="assets/images/logo.png" alt="Company Logo" />
+          <div class="handle">@NewsToday</div>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="x-twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Bottom Boxes -->
+        <div class="bottom-boxes">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </aside>
+
+      <!-- Right form -->
+      <section class="form-section">
+        <!-- Change Email Here -->
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/contact@newstoday.lk"
+          method="POST"
+        >
+          <div class="input-grid">
+            <div class="input-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" />
+            </div>
+            <div class="input-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="14"></textarea>
+          </div>
+
+          <!-- Disable CAPTCHA -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Custom subject -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Message!"
+          />
+
+          <input type="hidden" name="_next" value="thanks.html" />
+
+          <!-- ✅ Submit Button -->
+          <div class="input-group">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <p class="bottom-text">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words.
+    </p>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
