@@ -1,0 +1,108 @@
+ <div class="footer">
+
+        <div class="footer-logo">
+            
+                <div class="fotter-logo"> <a href="#">News &nbsp; &nbsp; Today</a> </div>
+            
+        </div>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li> <br>
+                <li><a href="#">About</a></li> <br>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contain">
+            <ul class="footer-contain">
+                <li> <h3> About Us </h3> </li> <br>
+                <li>  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced  below for those interested. Sections 1.10.32 and 1.10.33 from "de  Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914  translation by H. Rackham.</p></li>
+            </ul> 
+          
+        </div>
+
+        <div class="footer-social">
+
+            <ul class = "social">
+                <li><a href="#"><img src="social.png"></a></li> 
+                <li><a href="#"><img src="social.png"></a></li>
+                <li><a href="#"><img src="social.png"></a></li>
+                <li><a href="#"><img src="social.png"></a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: block;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin-right: 20px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contain {
+    display: block;
+    align-items: center;
+    list-style: none;
+    margin: 5;
+    padding: 0;
+}
+
+
+.footer-social {
+
+    align-items: center;
+}
+
+.footer-logo{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    font-family: inherit;
+    padding-right: 40px;
+}
+
+.footer-logo{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: white;
+}
