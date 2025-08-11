@@ -2,7 +2,7 @@ body {
   background: #fff;
   color: #000;
   margin: 0;
-  max-width: 1440px;
+  
   font-family: 'Inter', Arial, sans-serif;
 }
 * {
@@ -179,8 +179,6 @@ nav {
   color: white;
   width: 100%;
   height: 655px;
-  width: 1440px;
- 
   height: 564px;
 }
 .section-title {
@@ -198,7 +196,6 @@ nav {
 .image-container {
   position: relative;
   width: 100%;
-  width: 1440px;
   top: 91px;
  
 }
@@ -516,106 +513,123 @@ max-width: 733px; /* adjust as needed */
   font-size: 20px;
 }
 
-/* Footer */
-.footer {
-  background: #181818;
-  color: #fff;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  padding: 28px 18px;
-  font-family: Arial, sans-serif;
-  margin-top: 32px;
-  max-width: 1440px;
-}
-.footer-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 18px;
-}
-.footer-divider {
-  width: 2px;
-  background: #bababa;
-  margin: 0 10px;
-}
-.footer-section.left .title {
-  font-weight: bold;
-  font-size: 1.2em;
-  display: block;
-  margin-bottom: 2px;
-}
-.footer-section.left .subtitle {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1.08em;
-}
-.footer-link {
-  margin-bottom: 16px;
-  font-size: 1.09em;
-  font-style: italic;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color .2s;
-}
-.footer-link:hover {
-  color: #c0c0c0;
-  text-decoration: underline;
-}
-.footer-section.right {
-  max-width: 300px;
-}
-.about-title {
-  font-weight: bold;
-  font-size: 1.13em;
-  margin-bottom: 6px;
-}
-.about-text {
-  font-size: 0.93em;
-  line-height: 1.4;
-  color: #ddd;
-}
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: 0 0 0 22px;
-}
-.social-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
- 
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  cursor: pointer;
-  transition: background .2s, border .2s;
-}
-.social-icon img {
-  width: 20px;
-  height: 20px;
-  filter: invert(1);
-}
-.social-icon:hover {
-  background: #ebe7e7;
-  border: 2px solid #fff;
+/*footer*/
+
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .footer, .main-stories, .top-banner, .top-stories { 
-    max-width: 100%; 
-    padding: 10px 5px; 
-    flex-direction: column; 
-  }
-  .socials {
-    flex-direction: row;
-    gap: 10px;
-    margin: 15px 0 0 0;
-  }
-  .footer-section { padding: 8px 0; }
-  .footer-divider { display: none; }
+.fotter-logo{
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    font-family: inherit;
+    text-align: left;
 }
+
+.fotter-logo a{
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+    padding-top: 0px;
+}
+
+.second_container{
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.second_container li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.third_container{
+    color: white;
+    padding: 50px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+
+
+.footer-social img {
+    width: 35px;
+    height: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer table {
+        width: 100%;
+        display: block;
+        border-collapse: collapse;
+    }
+
+    footer table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; 
+    }
+
+    footer table th,
+    footer table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer table td div {
+        display: none;
+    }
+
+    .fotter-logo {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    .second_container {
+        padding: 0;
+    }
+
+    .second_container ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .second_container li {
+        margin: 8px 0;
+    }
+
+    .second_container li a {
+        font-size: 18px;
+    }
+
+    .third_container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .footer-social img {
+        width: 40px;
+        height: 40px;
+    }
+}
+

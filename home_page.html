@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="home_page_style.css">
 </head>
 <body>
-    <div class="nav">
-        <div class="menu-toggle">&#9776;</div>
-        <div class="nav-links">
-            <ul class="nav-menu">
-                <li class="logo"> <a href="#">News <br> &nbsp; Today</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <div class="login">
-                    <li><a href="#"><button class="button1">Login</button></a></li>
-                    <li><a href="#"><button class="register_button">Register</button></a></li>
-                </div>
-            </ul>
-        </div>
-    </div>
+<nav>
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="assets/images/logo.png" alt="News Today Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="./home_page.html">HOME</a></li>
+      <li><a href="./local.html">LOCAL</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div class="auth-buttons">
+    <a href="#" class="btn btn-signup">Signup</a>
+    <a href="#" class="btn btn-login">Login</a>
+  </div>
+</nav>
+
 
     
 <div class="headline">
@@ -339,5 +344,6 @@
             navLinks.classList.toggle('active');
         });
     </script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

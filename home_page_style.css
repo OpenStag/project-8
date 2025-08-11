@@ -3,118 +3,167 @@ body {
     padding: 0;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: black;
+/* Nav bar */
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.logo img {
+  height: 40px; /* Adjust based on your logo size */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
 }
 
 .nav-links {
-    display: flex;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.nav-menu{
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    align-items: center;
-    padding-left: 0;
-    margin: 0;
+.nav-links li {
+  list-style: none;
+  position: relative;
+  margin: 0 15px;
 }
 
-.nav-menu li {
-    margin-right: 50px;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: italic;
+  padding: 10px 15px;
+  display: block;
 }
 
-.nav-menu li a {
-    text-decoration: none;
-    color: white;
+.nav-links li:hover > a {
+  background-color: #333;
+  border-radius: 4px;
 }
 
-.logo{
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    font-family: inherit;
-    padding-right: 40px;
+/* Dropdown styles */
+.dropdown {
+  position: relative;
 }
 
-.logo a {
-    text-decoration: none;
-    color: white;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
 }
 
-.login {
-    margin-left: auto;
-    display: flex;
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.login li {
-    margin-right: 20px;
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-.login button {
-    border-radius: 50px;
-    border: none;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.login .button1 {
-    background-color: red;
-    color: white;
+/* Button styles */
+.auth-buttons {
+  display: flex;
+  font-style: italic;
+  gap: 10px;
 }
 
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        background-color: black;
-    }
-
-    .nav-links.active {
-        display: block;
-    }
-
-    .nav-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0;
-        text-align: left;
-    }
-
-    .login {
-        flex-direction: column;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .login li {
-        margin: 5px 0;
-    }
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
 }
+
+.btn-signup {
+  background-color: red;
+  color: black;
+}
+
+.btn-login {
+  background-color: white;
+  color: black;
+}
+
+.btn-signup:hover {
+  background-color: #cc0000;
+}
+
+.btn-login:hover {
+  background-color: #e6e6e6;
+}
+
+.form-title {
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    padding: 18;
+  }
+}
+
+.left-panel {
+  position: relative;
+  background-color: #d8333f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .left-panel {
+    width: 220px;
+  }
+}
+
+/* nav end */
 
 .headline{
     text-align: left;
@@ -130,7 +179,6 @@ body {
 .headline-img {
     position: relative;
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -422,7 +470,7 @@ body {
     font-style: italic;
     color: black;
     font-family: "Inter", sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -567,7 +615,6 @@ footer{
 .third_container{
     color: white;
     padding: 50px;
-    max-width: 400px;
     text-align: left;
     margin-bottom: 100px;
 }
